@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .active{
+            background: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <a :class="{active:isActive}" :href="url[1]">dianwo</a>
+        <!--<img v-bind:class="klass" v-bind:src="img" alt="蛋糕">-->
+    </div>
+    <script src="./lib/vue.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

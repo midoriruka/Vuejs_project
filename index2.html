@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <button v-on="{mouseenter:mousein,mouseleave:mouseout}" v-on:click="clickBtn()">dianwo</button>
+        <form action="" @keyup.enter="onkeyup()" @submit.prevent="onSubmit()">
+            <input type="text">
+            <button type="submit">tijiao</button>
+        </form>
+    </div>
+    <script src="./lib/vue.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
