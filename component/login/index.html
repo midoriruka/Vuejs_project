@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
+    <style>
+        #app{
+            font-family: 'Pattaya', sans-serif;
+            margin-top:150px;
+            text-align:center;
+            color:chocolate;
+        }
+        input{
+            padding: 10px;
+            margin: 10px;
+            border-radius:3px;
+            border: 1px solid chocolate;
+            outline:none;
+        }
+        .btn{
+            padding:8px 12px;
+            margin:8px;
+            border-radius:3px;
+            background-color: chocolate;
+            border: 1px solid chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <login></login>
+    </div>
+    <template id="login">
+        <div>
+            <div>用户名：<input type="text" v-model="yhm"></div>
+            <div>密码&nbsp;&nbsp;&nbsp;：<input type="text" v-model="mm"></div>
+            <div>验证码：<input id="yzm" type="text" v-model="yzm"></div>
+            <button class="btn" @click="denglu">登录</button>
+            <button class="btn" @click="quxiao">取消</button>
+        </div>
+    </template>
+    <script src="./vue/vue.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
